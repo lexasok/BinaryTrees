@@ -13,6 +13,9 @@ public class Testers {
     }
 
     public static void main(String[] args) {
-
+        EmptyBST emptyBST = new EmptyBST();
+        NonEmptyBST nonEmptyBST = new NonEmptyBST(34);
+        checkIsEmpty(emptyBST);
+        checkIsEmpty(nonEmptyBST);
     }
 }
