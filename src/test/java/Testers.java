@@ -7,7 +7,7 @@ public class Testers {
             }
         } else if (tree instanceof NonEmptyBST) {
             if (!tree.isEmpty()) {
-                System.out.println("Good, tree is a NonEmptyBST and it is not empty!\n");
+                System.out.println("Good, tree is a NonEmptyBST and it is not-empty!\n");
             }
         }
     }
