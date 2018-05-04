@@ -1,18 +1,18 @@
 public class Testers {
 
-    public static void checkIsEmpty(Tree tree) {
+    public static void checkIsEmpty(Tree tree) throws Exception {
         if (tree instanceof EmptyBST) {
-            if (tree.isEmpty()) {
-                System.out.println("Good, tree is an EmptyBST and it is empty!\n");
+            if (!tree.isEmpty()) {
+                throw new Exception("Something wrong!");
             }
         } else if (tree instanceof NonEmptyBST) {
-            if (!tree.isEmpty()) {
-                System.out.println("Good, tree is a NonEmptyBST and it is not-empty!\n");
+            if (tree.isEmpty()) {
+                throw new Exception("Something wrong!");
             }
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         EmptyBST emptyBST = new EmptyBST();
         NonEmptyBST nonEmptyBST = new NonEmptyBST(34);
         checkIsEmpty(emptyBST);
