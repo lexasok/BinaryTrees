@@ -1,4 +1,19 @@
+import java.util.Random;
+
 public class Testers {
+
+    //random ints
+    public static int randomInt() {
+        Random random = new Random();
+        return random.nextInt();
+    }
+
+    public static int randomInt(int min, int max) {
+        Random random = new Random();
+        return random.nextInt((max - min) + 1) + 1;
+    }
+
+    //random BinarySearchTreas
 
     public static void checkIsEmpty(Tree tree) throws Exception {
         if (tree instanceof EmptyBST) {
@@ -37,5 +52,12 @@ public class Testers {
         checkAddMemberCardinality(emptyBST, 5);
         checkAddMemberCardinality(nonEmptyBST,5);
         checkAddMemberCardinality(nonEmptyBST,34);
+
+        int i = 10;
+        while (i > 0) {
+            System.out.println(randomInt());
+            i--;
+        }
+
     }
 }
