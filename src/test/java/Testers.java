@@ -15,7 +15,11 @@ public class Testers {
 
     //random BinarySearchTreas
     public static Tree randomTree(int count) {
-        return null;
+        if (count == 0 ) {
+            return new EmptyBST();
+        } else {
+            return randomTree(count - 1).add(randomInt(0, 50));
+        }
     }
 
 
