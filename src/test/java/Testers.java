@@ -12,6 +12,10 @@ public class Testers {
         }
     }
 
+    public static void checkAddMemberCordinality() {
+
+    }
+
     public static void main(String[] args) throws Exception {
         EmptyBST emptyBST = new EmptyBST();
         NonEmptyBST nonEmptyBST = new NonEmptyBST(34);
