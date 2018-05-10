@@ -61,6 +61,9 @@ public class Testers {
         checkAddMemberCardinality(nonEmptyBST,5);
         checkAddMemberCardinality(nonEmptyBST,34);
 
-
+        int testsCount = 1000;
+        for (int i = 0; i < testsCount; i ++) {
+            checkAddMemberCardinality(randomTree(randomInt(0,20)), randomInt(0, 20));
+        }
     }
 }
