@@ -25,6 +25,7 @@ public class Testers {
         } else {
             throw new Exception("Schize! Something wrong!");
         }
+        System.out.println("Test passed");
     }
 
     public static void main(String[] args) throws Exception {
@@ -32,5 +33,7 @@ public class Testers {
         NonEmptyBST nonEmptyBST = new NonEmptyBST(34);
         checkIsEmpty(emptyBST);
         checkIsEmpty(nonEmptyBST);
+
+        checkAddMemberCardinality(emptyBST, 5);
     }
 }
