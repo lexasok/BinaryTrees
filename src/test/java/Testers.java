@@ -53,11 +53,6 @@ public class Testers {
         checkAddMemberCardinality(nonEmptyBST,5);
         checkAddMemberCardinality(nonEmptyBST,34);
 
-        int i = 10;
-        while (i > 0) {
-            System.out.println(randomInt());
-            i--;
-        }
 
     }
 }
