@@ -35,5 +35,7 @@ public class Testers {
         checkIsEmpty(nonEmptyBST);
 
         checkAddMemberCardinality(emptyBST, 5);
+        checkAddMemberCardinality(nonEmptyBST,5);
+        checkAddMemberCardinality(nonEmptyBST,34);
     }
 }
