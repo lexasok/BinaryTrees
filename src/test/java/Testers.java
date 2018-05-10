@@ -14,6 +14,10 @@ public class Testers {
     }
 
     //random BinarySearchTreas
+    public static Tree randomTree(int count) {
+        return null;
+    }
+
 
     public static void checkIsEmpty(Tree tree) throws Exception {
         if (tree instanceof EmptyBST) {
