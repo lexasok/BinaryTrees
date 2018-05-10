@@ -12,8 +12,19 @@ public class Testers {
         }
     }
 
-    public static void checkAddMemberCordinality() {
-
+    public static void checkAddMemberCardinality(Tree tree, int x) throws Exception {
+        int nT = tree.add(x).cardinality();
+        if (nT == tree.cardinality() + 1) {
+            if (tree.member(x)) {
+                throw new Exception("Shit! The cardinality increased by 1, but it should not have been!");
+            }
+        } else if (nT == tree.cardinality()) {
+            if (!tree.member(x)) {
+                throw new Exception("F@ck! The cardinality didn't increased by 1, but it had to!");
+            }
+        } else {
+            throw new Exception("Schize! Something wrong!");
+        }
     }
 
     public static void main(String[] args) throws Exception {
