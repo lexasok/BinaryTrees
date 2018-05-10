@@ -1,3 +1,4 @@
+import java.util.Date;
 import java.util.Random;
 
 public class Testers {
@@ -61,9 +62,11 @@ public class Testers {
         checkAddMemberCardinality(nonEmptyBST,5);
         checkAddMemberCardinality(nonEmptyBST,34);
 
+        long start = System.currentTimeMillis();
         int testsCount = 1000;
         for (int i = 0; i < testsCount; i ++) {
-            checkAddMemberCardinality(randomTree(randomInt(0,20)), randomInt(0, 20));
+            checkAddMemberCardinality(randomTree(randomInt(0,50)), randomInt(0, 50));
         }
+        System.out.println("Time: " + (System.currentTimeMillis() - start) + " ms");
     }
 }
